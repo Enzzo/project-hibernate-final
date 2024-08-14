@@ -15,6 +15,7 @@ public class App{
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         try(Session session = sessionFactory.openSession()){
             NativeQuery nativeQuery = session.createNativeQuery("CREATE TABLE persons");
+            System.out.println("DEBUG MESSAGE");
         }
     }
 }
