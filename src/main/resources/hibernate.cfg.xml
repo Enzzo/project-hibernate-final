@@ -6,7 +6,7 @@
 <hibernate-configuration>
     <session-factory>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3307</property>
+        <property name="connection.url">jdbc:mysql://localhost:3307/world</property>
         <property name="connection.username">root</property>
         <property name="connection.password">root</property>
 
@@ -15,6 +15,6 @@
         <property name="show_sql">true</property>
         <property name="highlight_sql">true</property>
         <property name="hbm2ddl.auto">update</property>
-        <mapping class="ru.javarush.vasilev.Entity.Person"/>
+<!--        <mapping class="ru.javarush.vasilev.Entity.Person"/>-->
     </session-factory>
 </hibernate-configuration>
